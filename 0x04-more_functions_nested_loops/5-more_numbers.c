@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * more_numbers - print numbers from 0to 14, ten times
+ * more_numbers - print numbers from 0 to 14, ten times
  * Only use _putchar 3 times
  *
  * Return: output of function
