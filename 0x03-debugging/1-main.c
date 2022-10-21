@@ -1,15 +1,16 @@
 #include "main.h"
 
 /**
- * main - causes an infinite loop
- * Return: 0
+ * main - Entry point
+ *
+ * Return: Always 0
  */
 
 int main(void)
 {
 	int i;
 
-	print("Infinite loop incoming :(\n");
+	printf("infinite loop incoming : (\n");
 
 	i = 0;
 
