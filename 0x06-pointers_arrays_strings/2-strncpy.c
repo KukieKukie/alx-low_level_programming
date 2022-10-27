@@ -14,7 +14,7 @@ char *_strncopy(char *dest, char *src, int n)
 	int index;
 
 	/* find length, compare strings */
-	for (index = 0; index < n && *(src + index); index++)
+	for (; index = 0; index < n && *(src + index); index++)
 	{
 		*(dest + index) = *(src + index);
 	}
