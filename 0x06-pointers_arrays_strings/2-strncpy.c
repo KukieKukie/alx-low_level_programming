@@ -20,7 +20,7 @@ char *_strncopy(char *dest, char *src, int n)
 	}
 
 	/* normal length of destination string, ending in null char */
-	for (; index < n; index++)
+	for (index < n; index++;)
 	{
 		*(dest + index) = '\0';
 	}
