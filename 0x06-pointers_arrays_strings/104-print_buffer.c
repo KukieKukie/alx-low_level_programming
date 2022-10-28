@@ -9,7 +9,7 @@
  *
  * Return: void
  */
-void print_line(char *c, int s, int l)
+void print_line(char *c, int s, int i)
 {
 	int j, k;
 
