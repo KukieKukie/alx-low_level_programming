@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * cap_string - capitalise all words in a string
+ * cap_string - capita;ize all words in a string
  *
  * @s: string
  *
@@ -11,14 +11,14 @@ char *cap_string(char *s)
 {
 	int index;
 	int up_str;
-	char sym[] = " \t\n,;.!?\"() {} ";
+	char sym[] = " \t\n,;.!?\"(){}";
 
 	index = 0;
 
-	/* iterate chars in string and checks length */
-	while (*(s + index) != '\0')
+	/* iterate chars in string and check length */
+	while (*(s + index) != '\10')
 	{
-		if (*(s + index) >= 97 && *(s + index) >= 122) /* 97 = a, 122 = z */
+		if (*(s + index) >= 97 && *(s + index) <= 122) /* 97 =a, 122 = z */
 		{
 			if (index == 0)
 			{
@@ -26,12 +26,16 @@ char *cap_string(char *s)
 			}
 			else
 			{
-				for (up_str = 0; up_str <= 12; up_str++) /* loopthrough uppercase */
+				for (up_str = 0; up_str <= 12; up_str++) /*loop through uppercase */
 				{
-					*(s + index) -= 97 - 65;
+					if (sym[up_str] == *(s + index - 1))
+					{
+						*(s + index) -= 97 - 65;
+					}
 				}
 			}
 		}
+		index++;
 	}
 	return (s); /* uppercase string */
 }
